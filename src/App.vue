@@ -1,37 +1,19 @@
 
 <template>
-  <div id="app" class="bg-gray-50">
-    <MobileHeader/>
-    <DesktopHeader/>
-
-    <MobileMain/>
-    <DesktopMain/>
-
-    <Footer/>
-    <DesktopFooter/>
+  <div id="app">
+    <Header/>
   </div>
 </template>
 
 <script>
-  import MobileHeader from '@/components/MobileHeader'
-  import DesktopHeader from '@/components/DesktopHeader'
-  import MobileMain from '@/components/MobileMain'
-  import DesktopMain from '@/components/DesktopMain'
-  import Footer from '@/components/Footer'
-  import DesktopFooter from '@/components/DesktopFooter'
-
+  import Header from '@/components/Header'
   export default {
     name: 'App',
     data() {
       return {}
     },
     components: {
-      MobileHeader,
-      DesktopHeader,
-      MobileMain,
-      DesktopMain,
-      Footer,
-      DesktopFooter,
+      Header,
     },
   }
 </script>
