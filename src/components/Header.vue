@@ -1,7 +1,7 @@
 <template>
   <header style="background-image: linear-gradient(to right, hsl(13, 100%, 72%), hsl(355, 100%, 74%));border-radius: 0 0 0 100px;" class="relative">
     <div style="background: ;" class="pb-40 max-w-6xl mx-auto">
-      <div class="flex justify-between items-center px-6 pt-14">
+      <div class="flex justify-between items-center px-6 lg:px-0 pt-14">
         <div class="lg:flex items-center justify-between">
           <Logo class="lg:mr-14"/>
           <Dropdowns/>
@@ -37,8 +37,9 @@
     </div>
 
     <!--  -->
-    <NavBar @closeNavBar="isOpen = false" v-if="isOpen"/>
-
+    <transition name="enter">
+      <NavBar @closeNavBar="isOpen = false" v-if="isOpen"/>
+    </transition>
   </header>
 </template>
 

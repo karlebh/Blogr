@@ -2,11 +2,20 @@
 <template>
   <div id="app">
     <Header/>
+
+    <MobileMain/>
+    <DesktopMain/>
+
+    <Footer/>
   </div>
 </template>
 
 <script>
   import Header from '@/components/Header'
+  import MobileMain from '@/components/MobileMain'
+  import DesktopMain from '@/components/DesktopMain'
+  import Footer from '@/components/Footer'
+
   export default {
     name: 'App',
     data() {
@@ -14,6 +23,9 @@
     },
     components: {
       Header,
+      MobileMain,
+      DesktopMain,
+      Footer,
     },
   }
 </script>

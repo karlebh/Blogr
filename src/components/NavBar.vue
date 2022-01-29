@@ -1,6 +1,6 @@
 <template>
   <nav class="lg:hidden absolute top-32 w-full">
-    <button @click="$emit('closeNavBar')" class="fixed inset-0 w-full h-full bg-transparent z-10"></button>
+    <button @click="$emit('closeNavBar')" class="fixed inset-0 w-full h-full bg-transparent cursor-default z-10"></button>
     <div 
     class="text-gray-700 w-11/12 md:w-8/12 bg-gray-50 mx-auto flex flex-col items-stretch text-center py-5 gap-y-5 rounded-md shadow-2xl relative z-20">
 
@@ -13,9 +13,11 @@
           <transition name="enter">
             <div v-if="product" class="bg-gray-200 mt-4 text-gray-800 w-11/12 mx-auto rounded-md">
               <div class="text-gray-800 flex flex-col text-center text-lg text-left pl-5 pr-16 gap-y-2 py-6">
-                <a class="hover:font-semibold" href="#">Laptops</a>
-                <a class="hover:font-semibold" href="#">Phones</a>
-                <a class="hover:font-semibold" href="#">Burgers</a>
+                <a class="hover:font-semibold" href="#">Overview</a>
+                <a class="hover:font-semibold" href="#">Pricing</a>
+                <a class="hover:font-semibold" href="#">Marketplace</a>
+                <a class="hover:font-semibold" href="#">Features</a>
+                <a class="hover:font-semibold" href="#">Integrations</a>
               </div>
             </div>
           </transition>
@@ -30,9 +32,10 @@
             <transition name="enter">
               <div v-if="company" class="bg-gray-200 mt-4 text-gray-800 w-11/12 mx-auto rounded-md">
                 <div class="text-gray-800 flex flex-col text-center text-lg text-left pl-5 pr-16 gap-y-2 py-6">
-                  <a class="hover:font-semibold" href="#">Facebook</a>
-                  <a class="hover:font-semibold" href="#">Twitter</a>
-                  <a class="hover:font-semibold" href="#">Nairaland</a>
+                  <a class="hover:font-semibold" href="#">About</a>
+                  <a class="hover:font-semibold" href="#">Team</a>
+                  <a class="hover:font-semibold" href="#">Blog</a>
+                  <a class="hover:font-semibold" href="#">Careers</a>
                 </div>
               </div>
             </transition>
@@ -89,7 +92,7 @@
 
         .enter-leave-active {
           animation: enter 0.2s reverse ease-out;
-          transition: opacity 0.1s ease-out;
+          transition: opacity 0.08s ease-out;
           opacity: 0;
         }
 

@@ -8,9 +8,11 @@
 		<transition name="flip">
 			<div v-if="product" class="w-40 bg-white rounded-md absolute -left-6 top-10 z-20 text-gray-800">
 				<div class="text-gray-800 flex flex-col text-left pl-5 pr-16 gap-y-2 py-6">
-					<a class="hover:font-semibold" href="#">Laptops</a>
-					<a class="hover:font-semibold" href="#">Phones</a>
-					<a class="hover:font-semibold" href="#">Burgers</a>
+					<a class="hover:font-semibold" href="#">Overview</a>
+					<a class="hover:font-semibold" href="#">Pricing</a>
+					<a class="hover:font-semibold" href="#">Marketplace</a>
+					<a class="hover:font-semibold" href="#">Features</a>
+					<a class="hover:font-semibold" href="#">Integrations</a>
 				</div>
 			</div>
 		</transition>
@@ -25,9 +27,10 @@
 		<transition name="flip">
 			<div v-if="company" class="w-40 bg-white rounded-md absolute -left-6 top-10 z-20">
 				<div class="text-gray-800 flex flex-col text-left pl-5 pr-16 gap-y-2 py-6">
-					<a class="hover:font-semibold" href="#">Facebook</a>
-					<a class="hover:font-semibold" href="#">Twitter</a>
-					<a class="hover:font-semibold" href="#">Nairaland</a>
+					<a class="hover:font-semibold" href="#">About</a>
+					<a class="hover:font-semibold" href="#">Team</a>
+					<a class="hover:font-semibold" href="#">Blog</a>
+					<a class="hover:font-semibold" href="#">Careers</a>
 				</div>
 			</div>
 		</transition>
