@@ -19,7 +19,7 @@
 
 
 		<div style="border-radius: 0 100px 0 100px;" class="mt-96 bg-blue-lightest py-32 mt-20 relative">
-			<Phone class="absolute -top-16"/>
+			<Phone class="absolute -top-16 z-50"/>
 			<div class="max-w-6xl mx-auto flex justify-end">
 				<div class="w-1/2">
 					<h1 class="text-2xl text-gray-100 font-semibold">State of the Art Infrastructure</h1>
